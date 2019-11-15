@@ -170,13 +170,16 @@ User
 -	Shop_id (if they own a shop)
 -	Email
 -	Address
+
 Shop
 -	User_id
 -	Shop_name
 -	Shop_id
+
 Category
 -	Category_name
 -	Category_id
+
 Product
 -	Product_id
 -	Title
@@ -184,6 +187,7 @@ Product
 -	Price
 -	Quantity
 -	Image
+
 Cart_item
 -	Cart_item_id
 -	Product_id
@@ -191,6 +195,7 @@ Cart_item
 -	Quantity
 -	Shopping_cart_id
 -	Shop_id
+
 Shopping cart
 -	Shopping_cart_id
 -	User_id
@@ -200,46 +205,62 @@ Shopping cart
 ## f. Identify the relationships and associations between the entities you have identified in part (e)
 
 User model 
+
 has_one :shop
 -	A user can only have one shop but can exist as a buyer without a shop.
-has_many :products
+
+has_many :products, dependent: :destroy
 -	A user is able to have many products but is able to exist without having any products. A user can just buy and never sell if wanted. If the user is destroyed all of their products will also be destroyed.
+
 has_one :cart, dependent: :destroy
 -	A user can only have one cart. This cart references the current users id, when a user is destroyed so is their cart.
 
 Shop model
+
 belongs_to :user
 -	The shop can only have one owner
+
 Has_many :category
 -	The shop can have many categories
 
 Category model
+
 Has_many :products
 -	The category has many products
 
 Product model
+
 Belongs_to :shop
 -	The products listed in the shop can only belong to one shop.
+
 Belongs_to :category
 -	The products belong to a particular category
+
 Belongs_to :user
 -	Makes sure a product has a user, a product cannot be user identity-less. Payment would be processed on the app and a user-less product would cause many issues.
+
 has_one_attached :image
 -	Informs the model to expect an image 
+
 has_many :cart_item, dependent: :destroy
 -	A product can appear in many user’s carts through the cart_item model. When a product is destroyed, all of that products in other user’s carts are destroyed.
 
 Cart_item Model
+
 belongs_to :cart
 -	The cart_item can only belong to the user’s cart it is assigned to.
+
 belongs_to :product
 -	The cart_item can only belong to the product it is assigned to.
 
 Cart Model
+
 belongs_to :user
 -	A cart can only belong to one user with the user id associated with it.
+
 has_many :cart_items, dependent: :destroy
 -	A cart can have many cart_items. The cart when destroyed, destroy the cart_items.
+
 has_many :products
 -	The cart has many products using the cart_items join table. 
 
