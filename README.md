@@ -245,8 +245,4 @@ has_many :products
 
 ## g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
-
-
-
-
-
+![ERD](https://github.com/reneenilsen/workbook/blob/master/Database%20ER%20Diagram%20(Crow's%20Foot)%20(2).png "ERD")
