@@ -113,45 +113,45 @@ Jump search is a searching algorithm is for searching sorted arrays. The jump se
 
 ### Shopify
 
-Shopify uses for their application and data are:
-Nginx - A high performance free open source web server powering busiest sites on the Internet.
-MySQL - The world's most popular open source database
-Redis - An in-memory database that persists on disk
-Ruby - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity
-Rails – Web development framework
-Go - An open source programming language that makes it easy to build simple, reliable, and efficient software
-Kafka - Distributed, fault tolerant, high throughput pub-sub messaging system
-Memcached - High-performance, distributed memory object caching system
-Open Resty - Turning Nginx into a Full-fledged Web App Server
-Hadoop - Open-source software for reliable, scalable, distributed computing
-Apache Spark - Fast and general engine for large-scale data processing
-Google Kubernetes Engine - Deploy, manage, and scale containerized applications on Kubernetes, powered by Google Cloud
-Lua - Powerful, fast, lightweight, embeddable scripting language
-Unicorn - Rack HTTP server for fast clients and Unix
+* Shopify uses for their application and data are:
+* Nginx - A high performance free open source web server powering busiest sites on the Internet.
+* MySQL - The world's most popular open source database
+* Redis - An in-memory database that persists on disk
+* Ruby - A dynamic, interpreted, open source programming language with a focus on simplicity and productivity
+* Rails – Web development framework
+* Go - An open source programming language that makes it easy to build simple, reliable, and efficient software
+* Kafka - Distributed, fault tolerant, high throughput pub-sub messaging system
+* Memcached - High-performance, distributed memory object caching system
+* Open Resty - Turning Nginx into a Full-fledged Web App Server
+* Hadoop - Open-source software for reliable, scalable, distributed computing
+* Apache Spark - Fast and general engine for large-scale data processing
+* Google Kubernetes Engine - Deploy, manage, and scale containerized applications on Kubernetes, powered by Google Cloud
+* Lua - Powerful, fast, lightweight, embeddable scripting language
+* Unicorn - Rack HTTP server for fast clients and Unix
  
 Utilities include: 
-ElasticSearch - Open Source, Distributed, RESTful Search Engine
-Bootsnap - Boot large ruby/rails apps faster, by Shopify
+* ElasticSearch - Open Source, Distributed, RESTful Search Engine
+* Bootsnap - Boot large ruby/rails apps faster, by Shopify
 
 DevOp includes: 
-GitHub - Powerful collaboration, review, and code management for open source and private development projects
-Git - Fast, scalable, distributed revision control system
-Docker - Enterprise Container Platform for High-Velocity Innovation.
-New Relic - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps.
-Kubernetes - Manage a cluster of Linux containers as a single system to accelerate Dev and simplify Ops
-Vagrant - A tool for building and distributing development environments
-Pingdom - Uptime and performance monitoring made easy
-Datadog - Unify logs, metrics, and traces from across your distributed infrastructure.
-Chef - Build, destroy and rebuild servers on any public or private cloud
-Zookeeper - Coordinating distributed systems
-StatusPage.io - Real-time status and incident communication.
-StatsD - Simple daemon for easy stats aggregation
-Buildkite - Fast, secure and scalable CI/CD for all your software projects
-Percy - Add visual reviews to your GitHub pull requests, helping your team spot UI bugs quickly and review visual changes easily
+* GitHub - Powerful collaboration, review, and code management for open source and private development projects
+* Git - Fast, scalable, distributed revision control system
+* Docker - Enterprise Container Platform for High-Velocity Innovation.
+* New Relic - SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps.
+* Kubernetes - Manage a cluster of Linux containers as a single system to accelerate Dev and simplify Ops
+* Vagrant - A tool for building and distributing development environments
+* Pingdom - Uptime and performance monitoring made easy
+* Datadog - Unify logs, metrics, and traces from across your distributed infrastructure.
+* Chef - Build, destroy and rebuild servers on any public or private cloud
+* Zookeeper - Coordinating distributed systems
+* StatusPage.io - Real-time status and incident communication.
+* StatsD - Simple daemon for easy stats aggregation
+* Buildkite - Fast, secure and scalable CI/CD for all your software projects
+* Percy - Add visual reviews to your GitHub pull requests, helping your team spot UI bugs quickly and review visual changes easily
 
 Business tools include: 
-Slack - Bring all your communication together in one place
-Zendesk - The leading cloud-based customer service software solution.
+* Slack - Bring all your communication together in one place
+* Zendesk - The leading cloud-based customer service software solution.
 
 Ruby is a dynamic, interpreted, open source programming language with a focus on simplicity and productivity that uses rails as a gem. Rails needs to be set up within the app in order to work properly. Ruby on Rails default database is SQLite, Shopify configures their system to use MySQL. The pods in which Shopify is currently using (A pod is a fully isolated instance of Shopify with its own data stores). These data stores use MySQL as well as Redis and Memcached. 
 
